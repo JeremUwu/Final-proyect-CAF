@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Font Familys -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap" rel="stylesheet"> 
+    <!-- CSS Link index -->
+    <link rel="stylesheet" href="firstStyles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <title>Fisioteca</title>
+</head>
+<body>
+    <!-- ENCABEZADO -->
+    <header>
+        <div class="header">
+            <!-- Barra de logo y secciones -->
+            <nav class="navBar">
+                <div class="logo"> <!--LOGO-->
+                    <img src="../img/logofisioteca.png" alt="Fisioteca">
+                    <h2>Fisioteca</h2>
+                </div>
+                
+                <ul class="listSections"> <!-- Secciones -->
+                    <li><a href="">Noticias</a></li>
+                    <li><a href="">Recursos</a></li>
+                    <li><a href="">Bibliografia</a></li>
+                    <li><a href="">Acerca de</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- CUERPO -->
+    <section class="main">
+
+        <section class="slider">
+            <div class="slider-container">
+                <img src="../img/arrowLeft.svg" class="slider-arrow" id="before">
+
+                <!-- Contenedor de un slider -->
+                <div class="slider-body show" data-id="1">
+                    <!-- Caja de texto del slider -->
+                    <div class="slider-text">
+                        <h2 class="subtittle">El “tsunami” de ondas gravitacionales</h2>
+                        <div class="sliderReview">Gracias a la alianza de 3 telescopios: LIGO (EE. UU.), Virgo (Italia) y KARGA (Japón), desde el año pasado detectamos lo que ahora vendría a ser un “tsunami” de ondas gravitacionales, debido a su concurrencia. Estas ondas ocurren por la colisión de 2 agujeros negros.</div>
+                    </div>
+                    <!-- Imagen del slider -->
+                    <figure class="slider-picture">
+                        <img src="../img/slide1.jpg" class="slider-img">
+                    </figure>
+                </div>
+
+                <!-- Contenedor de un slider -->
+                <div class="slider-body" data-id="2">
+                    <!-- Caja de texto del slider -->
+                    <div class="slider-text">
+                        <h2 class="subtittle">Hola causita, soy el slide 2</h2>
+                        <div class="sliderReview"></div>
+                    </div>
+                    <!-- Imagen del slider -->
+                    <figure class="slider-picture">
+                        <img src="../img/slide2.jpg" class="slider-img">
+                    </figure>
+                </div>
+
+                <!-- Contenedor de un slider -->
+                <div class="slider-body" data-id="3">
+                    <!-- Caja de texto del slider -->
+                    <div class="slider-text">
+                        <h2 class="subtittle">Hola causita, soy el slide 3</h2>
+                        <div class="sliderReview">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum voluptatem doloribus laborum quidem hic modi.</div>
+                    </div>
+                    <!-- Imagen del slider -->
+                    <figure class="slider-picture">
+                        <img src="../img/slide3.jpg" class="slider-img">
+                    </figure>
+                </div>
+
+                <!-- Contenedor de un slider -->
+                <div class="slider-body" data-id="4"> <!--Data id debe aumentarse en 1-->
+                    <!-- Caja de texto del slider -->
+                    <div class="slider-text">
+                        <h2 class="subtittle">Hola causita, soy el slide 4. Hola mundo</h2>
+                        <div class="sliderReview">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum voluptatem doloribus laborum quidem hic modi.</div>
+                    </div>
+                    <!-- Imagen del slider -->
+                    <figure class="slider-picture">
+                        <img src="../img/slide3.jpg" class="slider-img">
+                    </figure>
+                </div>
+
+
+                <img src="../img/arrowRight.svg" class="slider-arrow" id="next">
+            </div>
+        </section>
+
+        <section class="units">
+            <div class="grid-container">
+                <div class="cellGrid">
+                    <img src="" alt="">
+                    <div class="overlay">
+                        <div class="txt"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, deserunt. Provident, laboriosam quod! Distinctio commodi quae ipsam quaerat quos consectetur, animi maiores obcaecati a id quasi velit vel! Earum, facere!</p><a href="Unidad 1.html" class="btn btn-primary stretched-link">Lest goes</a></div>
+                    </div>
+                </div>
+                <div class="cellGrid">
+                    <img src="" alt="">
+                    <div class="overlay">
+                        <div class="txt"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nemo voluptatum praesentium natus tenetur? Modi natus, quis minima quo quod, alias debitis id nostrum distinctio eos unde, delectus quia incidunt!</p></div><a href="Unidad2.html" class="btn btn-primary stretched-link">Lest goes</a>
+                    </div>
+                </div>
+                <div class="cellGrid">
+                    <img src="" alt="">
+                    <div class="overlay">
+                        <div class="txt"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis maxime nam praesentium corrupti, suscipit tempore, consequuntur at porro nulla nemo cum magni quia expedita obcaecati voluptatum beatae, pariatur fugit! Doloremque!</p><a href="Unidad3.html" class="btn btn-primary stretched-link">Lest goes</a></div>
+                    </div>
+                </div>
+                <div class="cellGrid">
+                    <img src="" alt="">
+                    <div class="overlay">
+                        <div class="txt"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse expedita nihil vitae perferendis iusto quibusdam amet beatae, molestias mollitia dolorem sapiente enim reprehenderit rerum quasi corporis veniam eius eum nesciunt.</p><a href="unidad4.html" class="btn btn-primary stretched-link">Lest goes</a></div>
+                    </div>
+                </div>
+                <div class="cellGrid">
+                    <img src="" alt="">
+                    <div class="overlay">
+                        <div class="txt"><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur, eos, sequi ipsam maiores consequatur voluptatem praesentium temporibus minus cupiditate esse dolore numquam a, exercitationem animi? Magni velit odio eius quae.</p><a href="U5.html" class="btn btn-primary stretched-link">Lest goes</a></div>
+                    </div>
+                </div>
+                <div class="cellGrid">
+                    <img src="" alt="">
+                    <div class="overlay">
+                        <div class="txt"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem consequatur eos quis quisquam. Assumenda in odit alias sit perspiciatis, voluptates earum nemo amet placeat accusantium quae voluptate repellendus at? Molestias.</p><a href="index (1).html" class="btn btn-primary stretched-link">Lest goes</a></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </section>
+
+    <!-- PIE DE PAGINA -->
+    <footer>
+        <div class="footer">
+            <div class="contactos">
+                <p>Visitanos en nuestras redes: </p>
+                <div class="linksContainer">
+                   <a href="https://www.facebook.com/Fisioteca-110021174836930"><i class="fab fa-facebook-square"></i></a>
+                    <a href="https://twitter.com/fisioteca5"><i class="fab fa-twitter-square"></i></a>
+                    <a href="https://www.instagram.com/fisioteca5/"><i class="fab fa-instagram-square"></i></a>
+                </div>
+                <p>Envianos un email al: <span>abcd@gmail.com</span></p>
+            </div>
+            <div class="acercaDe">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, reprehenderit cumque? Voluptatibus, porro dolore cupiditate cumque quaerat mollitia? Beatae in quis pariatur ab laboriosam ipsam itaque rem. Voluptates, blanditiis omnis?</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" ></script>
+</body>
+</html>

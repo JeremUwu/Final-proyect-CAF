@@ -1,0 +1,553 @@
+/* Generales */
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    text-decoration: none;
+    
+font-family: 'sen', sans-serif;
+font-weight: 100; 
+
+}
+/*/loader*/
+
+
+ 
+    .loader-container{
+  position: relative;
+  width: 60px;
+  height: 60px;
+  margin: 10px;
+    }
+ 
+    .loader-container .loader{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  border: solid 4px transparent;
+  border-top-color: #0dac77;
+  border-left-color: #0dac77;
+  border-radius: 50%;
+  animation: loader 2.4s linear infinite;
+    }
+ .hidden{
+    overflow: hidden;
+ }
+    .centrado{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    }
+ 
+    .loader-container .loader2{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 70%;
+  height: 70%;
+  border: solid 4px transparent;
+  border-top-color: #283fc3;
+  border-left-color: #283fc3;
+  border-radius: 50%;
+  animation: loader2 1.2s linear infinite;
+    }
+ 
+    @keyframes loader{
+  0%{
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100%{
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+    }
+ 
+    @keyframes loader2{
+  0%{
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100%{
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+    }
+
+
+body{
+    padding-top: 0px;
+    text-align: center;
+     background: url(https://i1.wp.com/img.fciencias.com/uploads/2017/04/fisica-quantica-wallpaper-fciencias-00003.jpg);
+}
+
+:root
+{
+    /* Variables de color */
+    --color1: #666;
+    --color2: #fff;
+    --degrad: radial-gradient(rgba(255, 255, 255, .25) 60%, rgba(255,255,255,.9));
+
+}
+
+section
+{
+    width: 100%;
+}
+
+.temas
+{
+    /* height: 960px; */
+    background-color: var(--color2);
+    justify-content: space-around;
+    position: absolute;
+}
+
+.content
+{
+    width: 80%;
+    /* background-color: rgba(255, 255, 255, .3); */
+    margin: 1rem auto;
+}
+
+.content .tittle
+{
+    padding: 2rem;
+    text-align: center;
+    font-size: 2rem;
+
+}
+
+.content .boxes
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+
+}
+
+.content .boxes .box
+{
+    width: 99%;
+    min-height: 300px;
+
+    display: flex;
+    flex-direction: row;
+
+    border-radius: 25px;
+    background: var(--degrad);
+    padding: 10px 15px;
+    margin: 1rem;
+    overflow: auto;
+background-color: #F09F13;
+}
+
+.content .boxes .box .img, .content .boxes .box .txt
+{
+    width: 50%;
+    position: relative;
+    /* background: var(--color1); */
+}
+
+.content .boxes .box .txt
+ {
+    line-height: 1.5rem;
+
+ }
+
+.content .boxes .box .img::after
+{
+    content: "";
+    position: absolute;
+    border: 1.5px solid rgba(150, 150, 150, .8);
+    right: 5px;
+    height: 100%;
+    /* margin: .2rem 0; */
+}
+
+/* .content .boxes .box .txt
+{
+    width: 50%;
+} */
+#TEMA1 {
+        padding: 50px 50px 50px 320px;
+ }
+#TEMA2 {
+        padding: 50px 50px 50px 290px;
+ }
+#TEMA3{
+        padding: 50px 50px 50px 290px;
+ }
+#TEMA4{
+        padding: 50px 50px 50px 290px;
+ }
+#TEMA5{
+         padding: 50px 50px 50px 290px;
+ }
+.fisica {
+    width: 90%;
+    height: 90%;
+    border: 2px solid red;
+    border-radius: 10%;
+
+}
+.drop {
+   width: 70%;
+    height: 30%;
+    border: 2px solid red;
+    border-radius: 10%;
+    margin: 5%;
+
+
+}
+
+.roblox {
+    width: 100%;
+    height: 100%;
+    background: #F09F13 ;
+    border-radius: 10% ;
+    padding: 20px;
+
+}
+/*.Thunder {
+    padding: 12px;
+    width: 250px;
+    height: 175px;
+    border: 4px solid #000; 
+    margin-bottom:50px ;
+    background-color: #ACE0FA;
+}*/
+
+.pdfview {margin: auto;
+    width: 80%;
+    height: 100vh;
+    display: block;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+ }
+
+/*butom top*/
+    .go-top-container{
+        position: fixed;
+        bottom: 4rem;
+        right: 4rem;
+        width: 6.6rem;
+        height: 6.6rem;
+        z-index: -1;
+
+ }
+
+ .go-top-button{
+    width: 0rem ;
+    height: 0rem;
+    background: #2071b2;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+
+ }
+  .go-top-button i{
+  position: absolute;
+  font-size: 1.7rem;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  color: #fff;
+  transition: .2s;
+  }
+
+  .show{
+    z-index: 10;
+  }
+
+  .show .go-top-button {
+    animation: popup .3s ease-in-out;
+    width: 6.6rem;
+    height: 6.6rem;
+    z-index: 11;
+  }
+
+  .show i{
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  @keyframes popup {
+   0%{
+   width: 0rem; 
+   height: 0rem;
+    }
+    50%{
+        width: 8rem ;
+        height: 8rem;
+
+    }
+
+    100%{
+        width: 6.6rem;
+        height: 6.6rem;
+    }
+
+  }
+  /*/////////////////////*/
+
+
+
+
+
+
+
+/*MENU RESPONSIVE*/
+
+
+
+
+
+
+        .Thunder__responsive-ul{
+        display: none;
+        }
+    .Thunder{
+         background-color: #9bf;
+        border: 4px solid #000; 
+        text-align: center;
+
+    }
+
+    .Thunder__li{
+    display: inline-block;
+    padding: 10px 30px 10px 70px;
+   
+    color: #fff;
+    }
+    .nav-item active:hover > a{
+        color: #1464F7;
+    }
+    .nav-item active:hover{
+    color: #1464F7;
+    }
+    .nav-item active a {
+    color: #000;
+    text-decoration: none;
+    }
+
+    .nav-item active i {
+    width: 50px;
+    box-sizing: border-box;
+    text-align: right;
+    }
+/*.tittle{
+
+    background: red;
+    position: sticky;
+    margin-bottom: 20px;
+    top: 0;
+    z-index: 1;
+
+}*/
+
+/*efectos de lineas*/
+
+
+ /*estamos eskeres*/
+   h1 {
+
+    display: inline-block;
+    position: relative;
+    font-family: 'Dancing Script', cursive;
+    }
+
+    h1:after, h1:before {
+    content: '';
+    position: absolute;
+    width: 120px;
+    height: 3px;
+    background-color: black;
+    top: 1.8em;
+    transform: scale(0);
+    transition: all 0.4s ease-in; 
+    }
+
+    h1:hover::before, h1:hover::after{
+    transform: scale(1);
+   }
+
+    h1:before{
+    left: 140px;
+    }
+
+    h1:after{
+    right: -100px;
+    }
+     
+
+
+/*efecto del h2*/
+
+    h2 {
+
+   display: inline-block;
+    position: relative;
+    font-family: 'Dancing Script', cursive;
+    color: #FACA1E;
+    }
+
+    h2:after, h2:before {
+   content: '';
+    position: absolute;
+    width: 120px;
+    height: 3px;
+    background-color: currentColor;
+   top: 0.6em;
+     
+    }
+
+   h2:before{
+    left: -120px;
+    }
+
+   h2:after{
+    right: -120px;
+    }
+
+
+/*nav/*/
+ .header
+ {
+    background-color: whitesmoke;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+ }
+
+        .header .navBar
+        {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+        }
+
+        .header .navBar .logo
+        {
+    display: flex;
+    padding-top: .5rem;
+    align-items: center;
+    width: 80px;
+    /* padding: .2rem 0; */
+        }       
+        .header .navBar .logo h2
+        {
+    position: relative;
+    top: -5px;
+    font-family: 'Oswald', sans-serif;
+        }
+        .header .navBar .logo img
+        {
+    width: 50%;
+    /* top: 5px; */
+    max-width: 100px;
+    min-width: 80px;
+    object-fit: contain;
+        }
+
+        .listSections
+        {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+        }
+
+        .listSections li
+        {
+    width: 50%;
+    max-width: 120px;
+    padding: .8rem;
+    margin: .3rem;
+    align-content: center;
+    background-color: var(--degrad);
+        }
+        
+        .listSections li a
+        {
+    text-decoration: none;
+    text-align: center;
+    color: green;
+    font-size: 1.3rem;
+    }
+
+        .listSections li a:hover{
+    transition: all .3s ease;
+    color: indigo;
+ }
+wqe
+
+/* FOOTER */
+.footer
+{
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    background-color: #C0EDB7;
+}
+
+.footer .contactos, .footer .acercaDe
+{
+    width: 50%;
+    /* background-color: sienna; */
+}
+
+.footer .contactos
+{
+    height: min-content;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer .contactos p
+{
+    margin-right: 1.5rem;
+}
+
+.footer .contactos p span
+{
+    font-size: 1.3rem;
+}
+
+.footer .contactos p:nth-last-child(1)
+{
+    margin-top: 1.3rem;
+}
+
+.footer .contactos .linksContainer
+{
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .contactos .linksContainer a
+{
+    color: rgba(0, 0, 0, 1);
+}
+
+.footer .contactos .linksContainer a:hover
+{
+    color: rgba(255, 255, 255, .9);
+}
+
+
